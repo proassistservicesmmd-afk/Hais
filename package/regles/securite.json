@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "actions_interdites": [
+    "acces_non_autorise",
+    "suppression_fichier",
+    "transfert_donnees_sensibles",
+    "commande_interdite"
+  ],
+  "niveau_alerte": "HAUTE"
+}

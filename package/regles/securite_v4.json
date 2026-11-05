@@ -1,0 +1,25 @@
+{
+    "version": "4.0",
+    "regles": [
+        {
+            "action": "acces_non_autorise",
+            "niveau": "CRITIQUE",
+            "decision": "BLOQUER"
+        },
+        {
+            "action": "suppression_fichier",
+            "niveau": "ELEVE",
+            "decision": "ALERTE"
+        },
+        {
+            "action": "transfert_donnees_sensibles",
+            "niveau": "CRITIQUE",
+            "decision": "BLOQUER"
+        },
+        {
+            "action": "commande_interdite",
+            "niveau": "CRITIQUE",
+            "decision": "BLOQUER"
+        }
+    ]
+}

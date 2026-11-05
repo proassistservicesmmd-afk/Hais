@@ -1,0 +1,8 @@
+{"date": "2026-11-03T22:59:40.788385+00:00", "agent": "agent_test", "action": "acces_non_autorise", "statut": "ALERTE", "niveau": "HAUTE"}
+{"date": "2026-11-03T22:59:40.792508+00:00", "agent": "agent_test", "action": "lecture_fichier", "statut": "AUTORISE", "niveau": "NORMAL"}
+{"date": "2026-11-03T23:05:08.347888+00:00", "agent": "test_securite", "action": "acces_non_autorise", "statut": "ALERTE", "niveau": "HAUTE"}
+{"date": "2026-11-03T23:05:08.351001+00:00", "agent": "test_securite", "action": "suppression_fichier", "statut": "ALERTE", "niveau": "HAUTE"}
+{"date": "2026-11-03T23:05:08.354069+00:00", "agent": "test_securite", "action": "transfert_donnees_sensibles", "statut": "ALERTE", "niveau": "HAUTE"}
+{"date": "2026-11-03T23:05:08.357388+00:00", "agent": "test_securite", "action": "commande_interdite", "statut": "ALERTE", "niveau": "HAUTE"}
+{"date": "2026-11-03T23:08:14.083967+00:00", "agent": "agent_test", "action": "lecture_fichier", "statut": "AUTORISE", "niveau": "NORMAL"}
+{"date": "2026-11-04T00:05:07.535805+00:00", "agent": "agent_test_production", "action": "lecture_fichier", "statut": "AUTORISE", "niveau": "NORMAL"}

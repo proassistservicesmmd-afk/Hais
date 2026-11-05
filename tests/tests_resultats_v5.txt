@@ -1,0 +1,106 @@
+test_action_alerte (test_integration_v4.TestIntegrationV4.test_action_alerte) ... ok
+test_action_autorisee (test_integration_v4.TestIntegrationV4.test_action_autorisee) ... ok
+test_action_bloquee (test_integration_v4.TestIntegrationV4.test_action_bloquee) ... ok
+test_action_vide_refusee (test_integration_v4.TestIntegrationV4.test_action_vide_refusee) ... ok
+test_journal_signe (test_integration_v4.TestIntegrationV4.test_journal_signe) ... ok
+test_acces_non_autorise (test_moteur_risques.TestMoteurRisques.test_acces_non_autorise) ... ok
+test_action_invalide (test_moteur_risques.TestMoteurRisques.test_action_invalide) ... ok
+test_action_vide (test_moteur_risques.TestMoteurRisques.test_action_vide) ... ok
+test_commande_interdite (test_moteur_risques.TestMoteurRisques.test_commande_interdite) ... ok
+test_lecture_autorisee (test_moteur_risques.TestMoteurRisques.test_lecture_autorisee) ... ok
+test_suppression_fichier (test_moteur_risques.TestMoteurRisques.test_suppression_fichier) ... ok
+test_transfert_sensible (test_moteur_risques.TestMoteurRisques.test_transfert_sensible) ... ok
+test_action_autorisee (test_securite.TestAIRiskMonitor.test_action_autorisee) ... ok
+test_action_interdite (test_securite.TestAIRiskMonitor.test_action_interdite) ... ok
+test_action_vide (test_securite.TestAIRiskMonitor.test_action_vide) ... ok
+test_agent_vide (test_securite.TestAIRiskMonitor.test_agent_vide) ... ok
+test_evenements_enregistres (test_securite.TestAIRiskMonitor.test_evenements_enregistres) ... ok
+test_modification_detectee (test_securite.TestAIRiskMonitor.test_modification_detectee) ... ok
+test_signature_apres_ecriture (test_securite.TestAIRiskMonitor.test_signature_apres_ecriture) ... ok
+test_type_incorrect (test_securite.TestAIRiskMonitor.test_type_incorrect) ... ok
+test_refus_si_integrite_initiale_invalide (test_transaction_v5.TestTransactionV5.test_refus_si_integrite_initiale_invalide) ... ok
+test_restauration_apres_erreur (test_transaction_v5.TestTransactionV5.test_restauration_apres_erreur) ... ok
+test_restauration_si_signature_echoue (test_transaction_v5.TestTransactionV5.test_restauration_si_signature_echoue) ... ok
+test_restauration_si_signature_finale_invalide (test_transaction_v5.TestTransactionV5.test_restauration_si_signature_finale_invalide) ... ok
+test_transaction_reussie (test_transaction_v5.TestTransactionV5.test_transaction_reussie) ... ok
+test_detection_wal_actif_apres_interruption (test_wal_recovery.TestWALRecovery.test_detection_wal_actif_apres_interruption) ... ok
+test_journal_original_invalide_refuse_sauvegarde (test_wal_recovery.TestWALRecovery.test_journal_original_invalide_refuse_sauvegarde) ... ok
+test_manifeste_falsifie_refuse (test_wal_recovery.TestWALRecovery.test_manifeste_falsifie_refuse) ... ok
+test_manifestes_malformes_refuses (test_wal_recovery.TestWALRecovery.test_manifestes_malformes_refuses) ... ok
+test_paire_hmac_sauvegardee_invalide_refusee (test_wal_recovery.TestWALRecovery.test_paire_hmac_sauvegardee_invalide_refusee) ... ok
+test_sauvegarde_journal_alteree (test_wal_recovery.TestWALRecovery.test_sauvegarde_journal_alteree) ... ok
+test_sauvegarde_wal_authentique (test_wal_recovery.TestWALRecovery.test_sauvegarde_wal_authentique) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.756s
+
+OK
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_v4_test
+Action : suppression_fichier
+Niveau : ELEVE
+Decision : ALERTE
+Motif : Règle de sécurité déclenchée
+[OK] Transaction signee et verifiee.
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_v4_test
+Action : lecture_fichier
+Niveau : NORMAL
+Decision : AUTORISER
+Motif : Aucune règle déclenchée
+[OK] Transaction signee et verifiee.
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_v4_test
+Action : acces_non_autorise
+Niveau : CRITIQUE
+Decision : BLOQUER
+Motif : Règle de sécurité déclenchée
+[OK] Transaction signee et verifiee.
+[REFUS] Action invalide.
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_v4_test
+Action : lecture_fichier
+Niveau : NORMAL
+Decision : AUTORISER
+Motif : Aucune règle déclenchée
+[OK] Transaction signee et verifiee.
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_test
+Action : lecture_fichier
+Niveau : NORMAL
+Decision : AUTORISER
+Motif : Aucune règle déclenchée
+[OK] Transaction signee et verifiee.
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_test
+Action : acces_non_autorise
+Niveau : CRITIQUE
+Decision : BLOQUER
+Motif : Règle de sécurité déclenchée
+[OK] Transaction signee et verifiee.
+[REFUS] Action invalide.
+[REFUS] Identifiant agent invalide.
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_test
+Action : lecture_fichier
+Niveau : NORMAL
+Decision : AUTORISER
+Motif : Aucune règle déclenchée
+[OK] Transaction signee et verifiee.
+[ERREUR] Transaction annulee : Integrite initiale non garantie.
+
+=== HUMANITY AI SHIELD V5 ===
+Agent : agent_test
+Action : lecture_fichier
+Niveau : NORMAL
+Decision : AUTORISER
+Motif : Aucune règle déclenchée
+[OK] Transaction signee et verifiee.
+[REFUS] Action invalide.
