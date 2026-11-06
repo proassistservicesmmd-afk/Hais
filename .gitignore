@@ -1,6 +1,40 @@
+# --- Existant (à conserver) ---
 archives/
 rapports/
 __pycache__/
 *.pyc
 .env
 
+# --- Python ---
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.pytest_cache/
+.cache/
+
+# --- Buildozer / Kivy / Android ---
+bin/
+.buildozer/
+*.apk
+*.aab
+*.idsig
+
+# Secrets de signature Android (NE JAMAIS versionner)
+*.keystore
+*.jks
+
+# --- Logs d'exécution (mais PAS package/logs/ qui contient les scellés) ---
+*.log
+!package/logs/
+
+# --- Éditeurs / OS ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
