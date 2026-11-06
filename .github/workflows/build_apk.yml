@@ -50,3 +50,5 @@ jobs:
           name: HAIS-APK
           path: bin/*.apk
           retention-days: 30
+
+
