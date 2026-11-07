@@ -1,6 +1,6 @@
 # Audit d'intégrité HAIS V7.0
 
-> **Jalons scellés** : `v7.0.0-integrity` (commit `d0033fb`, avant nettoyage) et `v7.0.1-integrity` (courant, après nettoyage).
+> **Jalons scellés** : `v7.0.0-integrity` (commit `d0033fb`, avant nettoyage), `v7.0.1-integrity` (commit `7202e85`, intermédiaire), `v7.0.2-integrity` (courant, après correction du sceau).
 
 ## Branche de référence
 
@@ -8,9 +8,9 @@
 
 - `main` : branche de travail / CI (historique antérieur, sans matériel cryptographique)
 - `principal` : branche d'audit contenant :
-  - le manifeste `SHA256SUMS_V7_0_20261107_140610.txt` + sa signature `.asc`
+  - le manifeste `SHA256SUMS_V7_0_20261107_142433.txt` + sa signature `.asc`
   - la clé publique `docs/hais-public-key.asc`
-  - le tag signé `v7.0.1-integrity`
+  - le tag signé `v7.0.2-integrity`
 
 ## Clé publique HAIS V7.0
 
@@ -43,10 +43,10 @@
     git clone https://github.com/proassistservicesmmd-afk/Hais.git
     cd Hais
     git checkout principal
-    git verify-tag v7.0.1-integrity
+    git verify-tag v7.0.2-integrity
     gpg --fingerprint A28E7A57BF634B97BECE52E78EAF2022D02E321F
-    gpg --verify SHA256SUMS_V7_0_20261107_140610.txt.asc SHA256SUMS_V7_0_20261107_140610.txt
-    sha256sum -c SHA256SUMS_V7_0_20261107_140610.txt
+    gpg --verify SHA256SUMS_V7_0_20261107_142433.txt.asc SHA256SUMS_V7_0_20261107_142433.txt
+    sha256sum -c SHA256SUMS_V7_0_20261107_142433.txt
 
 ## Commit cible du tag
 
