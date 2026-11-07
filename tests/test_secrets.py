@@ -1,15 +1,14 @@
-"""Tests V7.0 — Détection de secrets. Doivent échouer sur V6.2."""
+"""Tests V7.0 — Détection de secrets."""
 import sys
 import unittest
 from pathlib import Path
 
-# Le module sera créé à l'étape suivante dans package/
 _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE.parent / "package"))
 sys.path.insert(0, str(_HERE.parent))
 sys.path.insert(0, str(_HERE))
 
-import detecteur_secrets as ds  # échouera : module pas encore créé
+import detecteur_secrets as ds
 
 
 class TestDetectionSecrets(unittest.TestCase):

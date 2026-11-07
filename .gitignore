@@ -38,3 +38,8 @@ bin/
 *~
 .DS_Store
 Thumbs.db
+
+# Journaux d'exécution (artefacts, pas code)
+package/logs/*.jsonl
+package/logs/tests/*.jsonl
+package/logs/tests/*.sha256
