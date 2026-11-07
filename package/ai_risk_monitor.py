@@ -39,7 +39,7 @@ def _tracer_refus(raison, action_tentee, agent_tente):
                 f.write(json.dumps(evenement, ensure_ascii=False) + "\n")
                 f.flush()
                 os.fsync(f.fileno())
-            protection_hmac.signer(
+            protection_hmac.signer(FICHIER_LOG_REFUS,
                 journal=FICHIER_LOG_REFUS,
                 signature=signature_refus,
                 cle=protection_hmac.CLE,
@@ -99,7 +99,7 @@ def analyser_evenement(action, agent="agent_test"):
                 fichier.write(json.dumps(evenement, ensure_ascii=False) + "\n")
                 fichier.flush()
                 os.fsync(fichier.fileno())
-            protection_hmac.signer(
+            protection_hmac.signer(journal,
                 journal=journal,
                 signature=protection_hmac.SIGNATURE,
                 cle=protection_hmac.CLE,

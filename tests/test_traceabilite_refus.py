@@ -30,11 +30,11 @@ class TestTracabiliteRefus(unittest.TestCase):
         self.journal_refus.write_text("", encoding="utf-8")
 
         import protection_hmac
-        protection_hmac.signer(
+        protection_hmac.signer(self.journal,
             journal=self.journal, signature=self.signature,
             cle=self.cle, afficher=False,
         )
-        protection_hmac.signer(
+        protection_hmac.signer(self.journal,
             journal=self.journal_refus, signature=self.signature_refus,
             cle=self.cle, afficher=False,
         )

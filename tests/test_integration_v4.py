@@ -30,7 +30,7 @@ class TestIntegrationV4(unittest.TestCase):
         protection_hmac.CLE = self.cle
         ai_risk_monitor.FICHIER_LOG = self.journal
 
-        protection_hmac.signer(afficher=False)
+        protection_hmac.signer(self.journal,self.journal, afficher=False)
 
     def tearDown(self):
         protection_hmac.SIGNATURE = self.signature_originale

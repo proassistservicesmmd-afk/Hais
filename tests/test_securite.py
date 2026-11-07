@@ -30,7 +30,7 @@ class TestAIRiskMonitor(unittest.TestCase):
         self.journal.write_text("", encoding="utf-8")
         self.cle.write_bytes(hashlib.sha256(b"cle de test").digest())
 
-        protection_hmac.signer(
+        protection_hmac.signer(self.journal,
             journal=self.journal,
             signature=self.signature,
             cle=self.cle,
